@@ -1,0 +1,25 @@
+.centered-container {
+    margin: 0px 250px 40px 250px;
+    width: 80%;
+    max-width: 80%;
+    height: 100vh; /* Set height to 100% of the viewport height */
+    max-height: 100vh; /* Set max-height to 100% of the viewport height */
+    padding: 0px 50px;
+}
+
+
+.notification-dropdown {
+    position: relative;
+    margin-right: -246px;
+    background-color: antiquewhite;
+    border-radius: 20px;
+    border-color: gainsboro;
+    border-style: dashed;
+}
+.bell-div{
+    position: relative;
+    right: -65px;
+    margin-top: -20px;
+    margin-bottom: -20px;
+    width: 22px;
+}

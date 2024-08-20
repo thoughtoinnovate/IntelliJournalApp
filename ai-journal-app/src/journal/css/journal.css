@@ -1,0 +1,38 @@
+.message-container {
+  height: 300px; /* Adjust as needed */
+  width: inherit;
+  overflow-y: auto;
+  border: 1px dotted; /* Add this line */
+}
+.bg-msg-one{
+background-color: #f0f0f0;
+}
+.bg-msg-two{
+background-color: lightblue;
+}
+.edit-icon {
+  margin-left: 10px;
+}
+
+.log-message {
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  width: 90%; /* Adjust as needed */
+}
+
+
+.log-entry {
+  display: flex;
+  align-items: center;
+}
+.checkbox-input {
+  margin-right: 10px;
+}
+
+
+.delete-button-container {
+  display: flex;
+  justify-content: flex-end;
+  margin-top: 10px; /* Adjust as needed */
+}

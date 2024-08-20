@@ -1,0 +1,24 @@
+services:
+  ai-journal-app:
+    build:
+      context: ./ai-journal-app
+      dockerfile: Dockerfile
+      args:
+        - REACT_APP_JOURNAL_BFF_BASE_URL=${REACT_APP_JOURNAL_BFF_BASE_URL}
+    ports:
+      - ${APP_EXT_PORT}:3090
+    env_file:
+      - .env
+  ai-journal:
+    build:
+      context: ./ai-journal
+      dockerfile: Dockerfile
+    ports:
+      - ${BFF_EXT_PORT}:8080
+    environment:
+      - ollama.url=http://host.docker.internal:11434
+      - journal.path=/app/journal
+    volumes:
+      - ~/Documents/:/app/journal
+    env_file:
+      - .env
